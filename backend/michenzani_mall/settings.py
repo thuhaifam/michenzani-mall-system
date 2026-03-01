@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-+ve1=x)$xm&h1504b%=-&ncmt&az*dlsvm1-xs)=5n55ufbiik
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','michenzani-mall-system.onrender.com']
 
 
 # Application definition
@@ -115,6 +115,10 @@ AUTH_PASSWORD_VALIDATORS = [
     
 ]
 
+CSRF_TRUSTED_ORIGIN = [
+    'https://michenzani-mall-system.onrender.com',
+    'http://michenzani-mall-system.onrender.com',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
